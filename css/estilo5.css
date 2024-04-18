@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*pendiente focus*/
+body{
+	background: #A3E4D7;
+	font-family: Open sans-serif;
+}
+
+.form_wrap{
+	width: 1000px;
+	height: 550px;
+	margin: 50px auto;
+	display: flex;
+	background: #FDFEFE;
+	overflow: hidden;
+	box-shadow: -6px 3px 9px 8px rgba(59, 59, 59, 1.0);
+}
+
+.contact_info::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #4ADEFB;
+	opacity: 0.4;
+}
+
+.contact_info{
+	width: 37%;
+	position: relative;
+	background-image: url(../img/24.webp);
+	background-size: cover;
+	background-position: center ceter;
+	display: flex;
+	flex-direction: column;
+	all: center;
+	justify-content: center;
+}
+
+.title_info, 
+.info_mail{
+	position: relative;
+	z-index: 99;
+	color: #F7F9F9;
+}
+
+.title_info{
+	margin-bottom: 80px;
+	font-size: 30px;
+}
+
+.title_info span{
+	font-size: 60px;
+	display: block;
+	text-align: center;
+
+}
+
+.title_info h1{
+	text-align: center;
+	
+}
+.info_mail p{
+	display: flex;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+
+.info_mail p:nth-child(1) span{
+	margin-right: 30px;
+	font-size: 20px;
+}
+
+.info_mail p:nth-child(2) span{
+	margin-right: 30px;
+	font-size: 25px;
+}
+.contact_form{
+	width: 63%;
+	padding: 30px 30px;
+}
+.contact_form h2{
+	text-align: center;
+	font-size: 42px;
+	font-weight: 600;
+	color: #7DCEA0;
+	margin-bottom: 35px;
+	text-shadow: 1px 2px #2E4053 ;
+}
+
+ .contact_form .user_info{
+	display: flex;
+	flex-direction: column;
+}
+
+.user_info label{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.contact_form input,
+.contact_form textarea{
+	width: 100%;
+	padding: 8px 0px 5px;
+	margin-bottom: 25px;
+	border: none;
+	border-bottom: 2px solid #BFC9CA ;
+	color: #34495E;
+	font-family: Century Gothic;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.contact_form textarea{
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 80px;
+	min-height: 80px;
+}
+
+.contact_form input[type="button"]{
+	background: #239DDB;
+	color: white;
+	width: 160px;
+	border: none;
+	border-radius: 5px;
+	align-self: flex-end;
+	font-family: Century Gothic;
+	cursor: pointer;
+}
+
+.contact_form input[type="button"]:hover{
+background:#239DDB;
+	color: #17202A;
+	transform: .5s all;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.modal-wrap{
+	width: 100%;
+	height: 100vh;
+	background: rgba(171, 241, 149, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.message_modal{
+background: white;
+box-shadow: -6px 3px 9px 8px rgba(59, 59, 9, 0.96);
+width: 300px;
+padding: 25px 20px 15px;
+}
+.message_modal h4{
+  text-align: center;
+  color: #0773B0;
+  font-weight: 500;
+  font-family: Century Gothic;
+
+}
+
+.message_modal h4:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: red;
+	margin: 10px 0 15px;
+}
+
+.message_modal p{
+	font-size: 16px;
+	color: #606060;
+}
+
+
+.message_modal p:before{
+	content: "\f00d";
+	font-family: FontAwesome;
+	display: inline-block;
+	color: red;
+	margin-right: 9px;
+}
+
+#btnClose{
+	display: inline-block;
+	padding: 4px 9px;
+	margin-bottom: 14px;
+	background: #3498D8;
+	color: red; border: 2px solid #B14141;
+	cursor: pointer;
+	float: right;
+}
